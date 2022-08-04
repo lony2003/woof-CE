@@ -88,12 +88,12 @@ no|cups-filters|cups-filters,cups-filters-core-drivers,libcupsfilters1,libcupsfi
 yes|curl|curl,libcurl4,libcurl4-openssl-dev|exe,dev,doc,nls||deps:yes
 no|cvs|cvs|exe>dev,dev,doc,nls
 yes|cyrus-sasl2|libsasl2-2|exe,dev,doc,nls||deps:yes
-yes|dash|dash|exe,dev,doc,nls||deps:yes
+no|dash|dash|exe,dev,doc,nls||deps:yes
 yes|dbus|dbus,dbus-x11,libdbus-1-3,libdbus-1-dev,libapparmor1|exe,dev,doc,nls||deps:yes
 yes|dbus-glib|libdbus-glib-1-2|exe,dev,doc,nls||deps:yes
 yes|dbus-user-session|dbus-user-session|exe>null,dev>null,doc>null,nls>null
 yes|d-conf|dconf-gsettings-backend,dconf-service,libdconf1|exe,dev,doc,nls||deps:yes #needed by gsettings-desktop-settings
-#yes|deadbeef|deadbeef,deadbeef-waveform-seekbar,deadbeef-vu-meter,deadbeef-spectrogram,deadbeef-rating,deadbeef-musical-spectrum,deadbeef-infobar|exe|
+no|deadbeef|deadbeef,deadbeef-waveform-seekbar,deadbeef-vu-meter,deadbeef-spectrogram,deadbeef-rating,deadbeef-musical-spectrum,deadbeef-infobar|exe|
 yes|debconf|debconf|exe,dev,doc,nls
 yes|debianutils|debianutils|exe,dev,doc,nls||deps:yes
 yes|debootstrap|debootstrap|exe>dev,dev,doc,nls||deps:yes
@@ -135,7 +135,7 @@ no|ffmpeg|ffmpeg,libaom0,libaom-dev,libavcodec58,libavcodec-extra58,libavcodec-d
 yes|file|file,libmagic1,libmagic-mgc|exe,dev,doc,nls||deps:yes
 no|file_sharing-curlftpfs-mpscan||exe
 yes|findutils|findutils|exe,dev>null,doc,nls||deps:yes
-yes|firefox-esr|firefox-esr,firefox-esr-l10n-all|exe,dev>null,doc,nls||deps:yes
+yes|firefox-esr|firefox-esr,firefox-esr-l10n-zh-cn|exe,dev>null,doc,nls||deps:yes
 no|firmware_linux_module_b43||exe| #120919 have taken these out of woof, now pets.
 no|firmware_linux_module_b43legacy||exe
 yes|flac|libflac8|exe,dev,doc,nls||deps:yes
