@@ -140,7 +140,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         tag_name: ${{ github.event.inputs.prefix }}-${{ github.event.inputs.version }}${{ github.event.inputs.suffix }}
         release_name: ${{ github.event.inputs.prefix }}-${{ github.event.inputs.version }}${{ github.event.inputs.suffix }}
@@ -149,7 +149,7 @@ jobs:
     - name: Upload ISO
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ${{ github.event.inputs.prefix }}-${{ github.event.inputs.version }}.iso
@@ -158,7 +158,7 @@ jobs:
     - name: Upload extras
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ${{ github.event.inputs.prefix }}-${{ github.event.inputs.version }}-extra.tar
