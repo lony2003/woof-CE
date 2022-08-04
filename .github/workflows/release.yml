@@ -24,11 +24,11 @@ on:
       compat_distro:
         description: 'Compatible distro'
         required: false
-        default: 'ubuntu'
+        default: 'debian'
       compat_version:
         description: 'Compatible distro version'
         required: false
-        default: 'jammy64'
+        default: 'bullseye64'
       kernel:
         description: 'Kernel version, without .x at the end'
         required: false
